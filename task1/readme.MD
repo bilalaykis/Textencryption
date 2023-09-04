@@ -1,17 +1,24 @@
 Task-1
 run step by step.
-Matris oluştur kodunda amaç alfabenin karışık bir şekilde bulunduğu matris üretip 
-dosyaya yazdırmak. Metin şifrele kodunda amaç matris dosyasının ilk iki karakterinde m ve 
-n sayılarını (matrisin boyutları) tutuyorduk. Matris dosyasını açıp içindekileri matrisdizi[ ] de 
-tutuyoruz. Sonra for döngülerini m ve n kadar döndürerek M[] [] matrisine matrisdizi[] ‘yi
-yerleştiriyoruz. Şifrelenecek metni okurken dosyadan okuduğumuz karakterleri 
-sifrelenecekmetin[]’ de tutuyoruz. For döngüleri kullanarak sifrelenecek metinin her hücresini 
-teker teker M matrisinin hangi hücresine eşit olduğunu buluyoruz (j+1)*10 + (k+1) işlemiyle 
-şifreleyip sifrelenmismetin[]’ de tutuyoruz. Şifrelenmiş metini dosyaya yazdırıyoruz. Metin
-şifre çözme kodunda matrisin bulunduğu dosyayı dizi[]’ de tutuyoruz. For döngüleri 
-kullanarak M[] [] matrisi oluşturup onun içine dizi[] elemanlarını yerleştiriyoruz. Şifreli metni 
-sifrelidizi[] ‘de tutuyoruz. Şifreli dizi elemanlarını teker teker ele alarak örneğin ilk elemanı 
-25 olsun. 25in mod 10 ‘daki değeri (-1)=j olur. 25/10=(i – 1) diyoruz ve böylece i int değer 
-olduğu için tamsayı çıkıyor. M[i] [j] de bulunan harfi sifresiz[] dizisine yerleştiriyoruz. 
-Sifresiz[] dizisi artık şifresi çözülmüş metni içeriyor. Sifresiz[] dizisini istenilen dosyaya 
-yazıyoruz.
+* In the create matrix code, the aim is to produce a matrix with a mixed alphabet and print to file. 
+
+* In the encrypt text code, the first two characters of the objective matrix file are m and
+We were holding n numbers (the dimensions of the matrix). Open the matrix file and put the contents in matrisdizi[ ]
+
+* We hold Then return matrisdizi[] to matrix M[] [] by rotating the for loops m and n
+we place. When reading the text to be encrypted, the characters we read from the file
+
+* We keep it in the text to be sifrelenecekmetin[]. Each cell of the text to be encrypted using for loops
+one by one we find which cell of the matrix M is equal to (j+1)*10 + (k+1)
+we encrypt it and keep it in sifrelenmismetin[]. 
+
+* We print the encrypted text to the file. Text
+In the decryption code, we keep the file containing the matrix in dizi[]. for loops
+We create the matrix M[] [] using the dizi[] and insert the dizi[] elements into it. cipher text
+
+* We keep it in cryptoarray[]. Considering the elements of the encrypted array one by one, for example the first element
+Let it be 25. The value of 25in in mod 10 is (-1)=j. We say 25/10=(i – 1) and thus i int value
+because it is an integer. M[i] We place the letter in [j] in the Sifresiz[] string.
+
+* The Sifresiz[] string now contains the decrypted text. Copy the Sifresiz[] string to the desired file.
+we are writing.
