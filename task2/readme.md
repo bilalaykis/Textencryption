@@ -33,4 +33,7 @@ We write text to a matrix with this route.
 <p align="center">
   <img src="../images/task2_algorithm_2.PNG" alt="Alt Text">
 </p>
+
+<p align="center">
 We do encryption starting from the upper left corner of the matrix.
+</p><br>
