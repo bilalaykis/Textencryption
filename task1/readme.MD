@@ -1,5 +1,5 @@
 Task-1
-run step by step.
+
 * In the create matrix code, the aim is to produce a matrix with a mixed alphabet and print to file. 
 
 * In the encrypt text code, the first two characters of the objective matrix file are m and
