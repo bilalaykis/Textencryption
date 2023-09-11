@@ -28,33 +28,33 @@ int main()
     char matrisdizi[200], sifrelenmisMetin[10000],sifrelenecekMetin[10000] ;
     int  sayac=2,sayac1=0, sayac2=0,sayac1tut;
 	printf("Matrisin yazildigi dosya ismini uzantisi ile birlikte veriniz\n");
-    dosyaismi1(matrisadi);//dosyaismi1 fonksiyonu 76. satirdadir.
+    dosyaismi1(matrisadi);
    
     matrisokuma(matrisdizi , buffer , sayac);
-   //matrisokuma fonksiyonu 83. satirdadir.
+
     printf("Sifrelenecek metni iceren dosya ismini uzantisi ile birlikte veriniz \n");
-    dosyaismi2(metinadi);//dosyaismi2 fonksiyonu 99. satirdadir.
+    dosyaismi2(metinadi);
     
-    /*
-	sifrelenecek metinokuma fonksiyonu hem sifrelenecek metni aliyor hem de sayac1'i return ediyor.
-	sifrelenecekmetinokuma fonksiyonu 106. satirdadir.*/
+
+	//sifrelenecek metinokuma fonksiyonu hem sifrelenecek metni aliyor hem de sayac1'i return ediyor.
+
     sayac1tut=sifrelenecekmetinokuma(buffer1, sifrelenecekMetin, sayac1 , m , n , matrisdizi );
     
 	m = matrisdizi[0];		//Dizinin ilk 2 h�cresinde m ve n i tutmustuk.
     n = matrisdizi[1];
     
-    M1 = charToInt(m);		//charToint fonksiyonu 10. satirdadir.
+    M1 = charToInt(m);
     N1 = charToInt(n);			
    
     char M[M1][N1];			//Matrise yer ayirdik.
     
-    matrisolusturma( M1 , N1 , M , matrisdizi);//matrisolusturma fonksiyonu 122. satirdadir.
+    matrisolusturma( M1 , N1 , M , matrisdizi);
   
     
     metinsifreleme(sayac2,sayac1tut, M1 , N1 , sifrelenecekMetin, M ,  sifrelenmisMetin , useless );
-   //metinsifreleme fonksiyonu 138. satirdadir.
+
 	printf("Sifrelenmis metni icerecek dosya ismini uzantisi ile birlikte veriniz \n");
-	dosyaismi3(sifrelidosyaadi); //dosyaismi3 fonksiyonu 162. satirdadir.
+	dosyaismi3(sifrelidosyaadi);
 	
 	
 	for(i=0; i<sayac1tut; i++)
@@ -120,7 +120,7 @@ int sifrelenecekmetinokuma(char buffer1[] , char sifrelenecekMetin[], int sayac1
 	
 void matrisolusturma( int M1 , int N1 , char M[M1][N1] , char matrisdizi[])
 {
-	int i , j,k=2;						//matrisdizinin ilk iki h�cresinde m ve n degeri vardi o yuzden k=2 den basliyor.
+	int i , j,k=2;						//matrisdizinin ilk iki hucresinde m ve n degeri vardi o yuzden k=2 den basliyor.
 	
     for(i=0; i<M1; i++)					
     {  

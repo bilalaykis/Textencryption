@@ -48,7 +48,7 @@ int main()
     
     char M[M1][N1];							//Matrisi initialize ettik.
     
-    matrisolustur( M1 , N1 , dizi , M );	//matrisolustur fonksiyonu 116.satirdadir.
+    matrisolustur( M1 , N1 , dizi , M );
 
 	char sifresiz[sayac2];
 	int t=0;
@@ -63,7 +63,7 @@ int main()
 	
 	
 	printf("Sifresi cozulmus metni icerecek dosya ismini uzantisi ile birlikte veriniz \n");
-	dosyaismi3(desifrelenmis);				//dosyaismi3 fonksiyonu 130.satirdadir.
+	dosyaismi3(desifrelenmis);
 	
 	
 	 for(i=0; i<t; i++)
